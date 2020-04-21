@@ -1,46 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1a53a18-c283-4a2f-91e1-0b76b6a1a828" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fall-2019-cucumber-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cybertek/library/pages/DashBoardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cybertek/library/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cybertek/library/pages/PageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cybertek/library/runners/CukesRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cybertek/library/step_definitions/LoginStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cybertek/library/step_definitions/LoginStepDefs2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cybertek/library/step_definitions/PageNavigationStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cybertek/library/utilities/BrowserUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cybertek/library/utilities/ConfigurationReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cybertek/library/utilities/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/Login.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/LoginWithParameters.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/PageNavigation.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cybertek/library/pages/DashBoardPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cybertek/library/pages/LoginPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cybertek/library/pages/PageBase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cybertek/library/runners/CukesRunner.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cybertek/library/step_definitions/LoginStepDefs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cybertek/library/step_definitions/LoginStepDefs2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cybertek/library/step_definitions/PageNavigationStepDefs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cybertek/library/utilities/BrowserUtils$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cybertek/library/utilities/BrowserUtils$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cybertek/library/utilities/BrowserUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cybertek/library/utilities/ConfigurationReader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/cybertek/library/utilities/Driver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/features/Login.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/features/LoginWithParameters.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/features/PageNavigation.feature" afterDir="false" />
-    </list>
+    <list default="true" id="a1a53a18-c283-4a2f-91e1-0b76b6a1a828" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,6 +92,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="514" y="57" key="#CukesRunner" timestamp="1587497261359">
+      <screen x="0" y="23" width="1440" height="815" />
+    </state>
+    <state x="514" y="57" key="#CukesRunner/0.23.1440.815@0.23.1440.815" timestamp="1587497261359" />
     <state x="401" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587396167808">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
