@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1a53a18-c283-4a2f-91e1-0b76b6a1a828" name="Default Changelist" comment="" />
+    <list default="true" id="a1a53a18-c283-4a2f-91e1-0b76b6a1a828" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +91,34 @@
       <option name="presentableId" value="Default" />
       <updated>1586997120965</updated>
     </task>
+    <task id="LOCAL-00001" summary="j">
+      <created>1587497364578</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587497364578</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ggggg">
+      <created>1587497700193</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587497700193</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ggggg">
+      <created>1587497781797</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587497781797</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="j" />
+    <MESSAGE value="ggggg" />
+    <option name="LAST_COMMIT_MESSAGE" value="ggggg" />
   </component>
   <component name="WindowStateProjectService">
     <state x="514" y="57" key="#CukesRunner" timestamp="1587497261359">
@@ -104,9 +133,11 @@
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state x="320" y="359" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1440.812@0.23.1440.812" timestamp="1586998333354" />
-    <state x="294" y="23" key="CommitChangelistDialog2" timestamp="1587491905233">
-      <screen x="0" y="23" width="1440" height="817" />
+    <state x="294" y="23" key="CommitChangelistDialog2" timestamp="1587497781613">
+      <screen x="0" y="23" width="1440" height="813" />
     </state>
+    <state x="294" y="23" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1587497781613" />
+    <state x="294" y="23" key="CommitChangelistDialog2/0.23.1440.815@0.23.1440.815" timestamp="1587497364307" />
     <state x="294" y="23" key="CommitChangelistDialog2/0.23.1440.817@0.23.1440.817" timestamp="1587491905233" />
     <state width="1398" height="132" key="GridCell.Tab.0.bottom" timestamp="1587398567523">
       <screen x="0" y="23" width="1440" height="812" />
@@ -185,6 +216,10 @@
     </state>
     <state x="420" y="183" width="600" height="486" key="find.popup/0.23.1440.807@0.23.1440.807" timestamp="1587396473439" />
     <state x="420" y="184" width="600" height="490" key="find.popup/0.23.1440.812@0.23.1440.812" timestamp="1587397047840" />
+    <state x="521" y="315" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1587497409021">
+      <screen x="0" y="23" width="1440" height="815" />
+    </state>
+    <state x="521" y="315" key="git4idea.remote.GitConfigureRemotesDialog/0.23.1440.815@0.23.1440.815" timestamp="1587497409021" />
     <state x="114" y="113" key="new project wizard" timestamp="1586997173273">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
