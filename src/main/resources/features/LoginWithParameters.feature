@@ -1,8 +1,8 @@
 Feature: Login with parameters
+@run
   Scenario: Login as librarian 11
     Given I am on the login page
-    And I entered the password "1872GG"
-    When I enter username "Librarian11@library"
+When I login using "librarian21@library" and "aZ849tSZ"
     And click the sign in button
     Then dashboard should be displayed
 

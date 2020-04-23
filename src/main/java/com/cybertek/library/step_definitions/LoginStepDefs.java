@@ -11,9 +11,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.Map;
+
 public class LoginStepDefs {
     LoginPage loginPage = new LoginPage();
-    WebDriverWait wait=new WebDriverWait(Driver.getDriver(),5);
 
     @Given("I am on the login page")
     public void i_am_on_the_login_page() {
@@ -38,18 +39,33 @@ public class LoginStepDefs {
         System.out.println("Verifying dashboard page");
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
         wait.until(ExpectedConditions.urlContains("dashboard"));
-        String actualTitle=Driver.getDriver().getCurrentUrl();
+        String actualTitle = Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualTitle.endsWith("dashboard"));
     }
 
     @When("I login as a student")
     public void i_login_as_a_student() {
         System.out.println("Logging in as a student");
+        String email = ConfigurationReader.getProperty("student_email");
+        String password = ConfigurationReader.getProperty("student_password");
+        loginPage.login(email, password);
     }
 
     @When("I login as an admin")
     public void i_login_as_a_admin() {
         System.out.println("Logging in as an admin");
+    }
+
+
+    @Given("I login using following credentials:")
+    public void i_login_using_following_credentials(Map<String, String> credentials) {
+        System.out.println(credentials);
+        String email = credentials.get("email");
+        String password = credentials.get("password");
+        System.out.println("email = " + email);
+        System.out.println("password = " + password);
+
+        loginPage.login(email, password);
     }
 
 }
