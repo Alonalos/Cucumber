@@ -21,7 +21,7 @@ public class BrowserUtils {
             }
         }
 
-        /*
+        /**
          * switches to new window by the exact title
          * returns to original window if windows with given title not found
          */

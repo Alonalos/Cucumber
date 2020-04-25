@@ -33,7 +33,7 @@ public class PageNavigationStepDefs {
 
     @Then("{string} page should be displayed")
     public void page_should_be_displayed(String page) {
-        BrowserUtils.wait(1);
+        BrowserUtils.wait(2);
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().endsWith(page.toLowerCase()));
         switch (page.toLowerCase()) {
             case "users":

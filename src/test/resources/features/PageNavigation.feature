@@ -6,9 +6,9 @@ Feature: Page navigation links
   #login as librarian
   #click on the Books link
   #verify page Books
-
+  @smoke
   Scenario: Go to the user page
   Given I am on the login page
     And I login as a librarian
-    When I click on "User" link
+    When I click on "Users" link
     Then "Users" page should be displayed

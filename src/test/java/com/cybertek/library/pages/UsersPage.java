@@ -43,6 +43,18 @@ public class UsersPage extends PageBase{
     @FindBy(id = "address")
     public WebElement address;
 
+    @FindBy(xpath = "//input[@name='start_date']")
+    public WebElement startDate;
+
+    @FindBy(xpath = "//input[@name='end_date']")
+    public WebElement endDate;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement submit;
+
+    @FindBy(xpath = "//button[@type='cancel']")
+    public WebElement close;
+
     public Select getShowRecords() {
         return new Select(showRecords);
     }
