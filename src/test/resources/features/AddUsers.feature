@@ -1,10 +1,10 @@
 @show_records @smoke @regression @lib-7031
-@check
+@hw
 Feature: Add Users window
   Background:
     Given I am on the login page
     And I login as a librarian
-    And I click on "Users" link
+    And I click on "users" link
     And I click on Add User
 
 

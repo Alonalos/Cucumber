@@ -12,9 +12,11 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class Driver {
-    private Driver() {}
+    private Driver() {
+    }
 
     private static ThreadLocal<WebDriver> driverPool = new ThreadLocal<>();
+
 
     public static WebDriver getDriver() {
         if (driverPool.get() == null) {

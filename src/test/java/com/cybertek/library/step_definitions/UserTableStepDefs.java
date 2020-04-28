@@ -7,8 +7,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebElement;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -38,7 +40,7 @@ public class UserTableStepDefs {
             boolean found = id.contains(expectedString) ||
                     name.contains(expectedString) ||
                     email.contains(expectedString);
-            assertTrue(found);
+            assertTrue("Expedted string was not found in table: "+expectedString, found);
         }
 
     }
@@ -55,6 +57,7 @@ public class UserTableStepDefs {
     @Then("table should contain this data")
     public void table_should_contain_this_data(Map<String, String> user) {
         System.out.println(user.entrySet());
+
         String name = user.get("Full Name");
         String email = user.get("Email");
         String id = user.get("User ID");
@@ -78,4 +81,20 @@ public class UserTableStepDefs {
         }
         assertTrue(user + " was not found", found);
     }
+
+    @Then("Each user id should be unique")
+    public void each_user_id_should_be_unique() {
+        usersPage.getShowRecords().selectByVisibleText("500");
+        BrowserUtils.wait(1);
+
+        List<String> list = BrowserUtils.getElementsText(usersPage.allUserIds);
+        System.out.println(list);
+
+        Set<String> set = new HashSet<>(list);
+        System.out.println(set);
+
+        assertEquals(list.size(), set.size());
+
+    }
+
 }

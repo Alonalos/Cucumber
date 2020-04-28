@@ -4,6 +4,7 @@ import com.cybertek.library.pages.DashBoardPage;
 import com.cybertek.library.pages.UsersPage;
 import com.cybertek.library.utilities.BrowserUtils;
 import com.cybertek.library.utilities.Driver;
+import com.cybertek.library.utilities.LibraryConstants;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -33,7 +34,7 @@ public class PageNavigationStepDefs {
 
     @Then("{string} page should be displayed")
     public void page_should_be_displayed(String page) {
-        BrowserUtils.wait(2);
+        BrowserUtils.wait(1);
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().endsWith(page.toLowerCase()));
         switch (page.toLowerCase()) {
             case "users":
@@ -79,5 +80,24 @@ public class PageNavigationStepDefs {
 
     }
 
+    @When("I go/navigate to {string} page")
+    public void i_go_to_page(String page) {
+        System.out.println("Going to page " + page);
+        switch (page.toLowerCase()) {
+            case LibraryConstants.DASHBOARD:
+                dashBoardPage.dashboard.click();
+                break;
+            case LibraryConstants.USERS:
+                dashBoardPage.users.click();
+                break;
+            case LibraryConstants.BOOKS:
+                dashBoardPage.books.click();
+                break;
+        }
+    }
+    }
 
-}
+
+
+
+

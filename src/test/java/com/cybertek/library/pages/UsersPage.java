@@ -13,6 +13,9 @@ public class UsersPage extends PageBase{
     @FindBy(xpath = "//table/tbody/tr")
     public List<WebElement> allRows;
 
+    @FindBy(id = "user_groups")
+    public WebElement userGroup;
+
     @FindBy(tagName = "input")
     public WebElement search;
 
@@ -28,8 +31,8 @@ public class UsersPage extends PageBase{
     @FindBy(tagName = "th")
     public List<WebElement> columnNames;
 
-    @FindBy(css = "a.btn-lg")
-    public WebElement addUsers;
+    @FindBy(xpath = "//a[@href='tpl/add-user.html']")
+    public WebElement addUser;
 
     @FindBy(name = "full_name")
     public WebElement fullName;
@@ -52,10 +55,36 @@ public class UsersPage extends PageBase{
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement submit;
 
+    @FindBy(id = "user_groups")
+    public WebElement user_groups_filter;
+
+    @FindBy(id = "status")
+    public WebElement status;
+
     @FindBy(xpath = "//button[@type='cancel']")
     public WebElement close;
 
-    public Select getShowRecords() {
+    @FindBy(xpath = "//table/tbody/tr/td[5]")
+    public List<WebElement> groupList;
+
+
+    @FindBy(xpath = "//table/tbody/tr/td[6]")
+    public List<WebElement> statusList;
+
+
+    public Select getUserGroupFilter(){
+        return new Select(user_groups_filter);
+    }
+
+    public Select getStatus(){
+        return new Select(status);
+    }
+
+    public Select getUserGroup(){
+        return new Select(userGroup);
+    }
+
+    public Select getShowRecords(){
         return new Select(showRecords);
     }
 }

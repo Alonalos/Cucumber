@@ -6,7 +6,7 @@ Feature: Add new user dialog
     |email   |librarian21@library|
     |password|aZ849tSZ           |
     And I click on "Users" link
-    When I click on Add User link
+    When I click on Add User
     Then dialog fields must have matching placeholders
     |fullname|Full Name|
     |email   |Email    |

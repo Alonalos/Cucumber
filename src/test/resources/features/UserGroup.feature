@@ -1,8 +1,10 @@
-@show_records @smoke @regression @lib-7031
+@show_records @smoke @regression @lib-7031 @today
 Feature: User group dropdown functionality
 
   Background:
-    Given I access Users page as a librarian
+    Given I login as a librarian
+    And I navigate to users page
+
 
   Scenario: User group default values User Management
     Then User group default value should be "All"

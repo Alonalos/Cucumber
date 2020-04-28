@@ -14,7 +14,7 @@ public class Hooks {
     public void setUpScenario() {
         System.out.println("set up browser");
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        //Driver.getDriver().manage().window().fullscreen();
+//        Driver.getDriver().manage().window().fullscreen();
     }
 
     @Before(value = "@db", order = 1)
@@ -24,18 +24,21 @@ public class Hooks {
 
     @After
     public void tearDownScenario(Scenario scenario) {
-        System.out.println("scenario.getSourceTagNames() "+ scenario.getSourceTagNames());
-        System.out.println("scenario.getName() "+scenario.getName());
-        if(scenario.isFailed()) {
-//take screenshot using selenium
-            byte[] screenShot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-            //attach to report
-            scenario.embed(screenShot, "image/png", scenario.getName());
+        System.out.println("scenario.getSourceTagNames() = " + scenario.getSourceTagNames());
+        System.out.println("scenario.getName() = " + scenario.getName());
+        scenario.write("Complete scenario: "+ scenario.getName());
+
+        if (scenario.isFailed()) {
+            // take screenshot using selenium
+            byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            // attach to report
+            scenario.embed(screenshot, "image/png", scenario.getName());
         }
+
+
         System.out.println("close driver");
         Driver.closeDriver();
     }
-
 
     @After("@db")
     public void closeConnection() {
